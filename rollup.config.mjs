@@ -18,5 +18,5 @@ export default {
       inlineDynamicImports: true,
     },
   ],
-  external: ['@capacitor/core', 'capacitor-pay-sumup', 'capacitor-pay-stripe', 'capacitor-pay-adyen'],
+  external: ['@capacitor/core', '@capacitor-pay/sumup', '@capacitor-pay/stripe', '@capacitor-pay/adyen', 'currency-codes-ts/dist/types'],
 }

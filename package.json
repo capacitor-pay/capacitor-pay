@@ -1,7 +1,7 @@
 {
-  "name": "capacitor-pay",
+  "name": "@capacitor-pay/core",
   "version": "0.0.1",
-  "description": "Provider-agnostic payments layer for Capacitor apps (Omnipay-style). Install alongside a provider package such as capacitor-pay-sumup.",
+  "description": "Provider-agnostic payments layer for Capacitor apps (Omnipay-style). Install alongside a provider package such as @capacitor-pay/sumup.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Spanu18/capacitor-pay.git"
+    "url": "git+https://github.com/capacitor-pay/capacitor-pay.git"
   },
   "keywords": [
     "capacitor",
@@ -38,9 +38,9 @@
     "@capacitor/core": ">=7.0.0"
   },
   "dependencies": {
-    "capacitor-pay-adyen": "file:../capacitor-pay-adyen",
-    "capacitor-pay-stripe": "file:../capacitor-pay-stripe",
-    "capacitor-pay-sumup": "file:../capacitor-pay-sumup",
+    "@capacitor-pay/adyen": "file:../capacitor-pay-adyen",
+    "@capacitor-pay/stripe": "file:../capacitor-pay-stripe",
+    "@capacitor-pay/sumup": "file:../capacitor-pay-sumup",
     "currency-codes-ts": "^3.0.0"
   }
 }

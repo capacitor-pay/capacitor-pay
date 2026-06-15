@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@capacitor-pay/adyen@file:../capacitor-pay-adyen":
+  version "0.0.1"
+  resolved "file:../capacitor-pay-adyen"
+
+"@capacitor-pay/stripe@file:../capacitor-pay-stripe":
+  version "0.0.1"
+  resolved "file:../capacitor-pay-stripe"
+
+"@capacitor-pay/sumup@file:../capacitor-pay-sumup":
+  version "0.0.1"
+  resolved "file:../capacitor-pay-sumup"
+
 "@capacitor/core@^8.1.0":
   version "8.4.0"
   resolved "https://registry.npmjs.org/@capacitor/core/-/core-8.4.0.tgz"
@@ -30,18 +42,6 @@ brace-expansion@^5.0.5:
   integrity sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==
   dependencies:
     balanced-match "^4.0.2"
-
-"capacitor-pay-adyen@file:../capacitor-pay-adyen":
-  version "0.0.1"
-  resolved "file:../capacitor-pay-adyen"
-
-"capacitor-pay-stripe@file:../capacitor-pay-stripe":
-  version "0.0.1"
-  resolved "file:../capacitor-pay-stripe"
-
-"capacitor-pay-sumup@file:../capacitor-pay-sumup":
-  version "0.0.1"
-  resolved "file:../capacitor-pay-sumup"
 
 currency-codes-ts@^3.0.0:
   version "3.0.0"

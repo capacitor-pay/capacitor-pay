@@ -1,6 +1,6 @@
-import type { AdyenCheckoutOptions, AdyenCheckoutResult, AdyenPlugin } from 'capacitor-pay-adyen'
-import type { SumUpCheckoutOptions, SumUpCheckoutResult, SumUpPlugin } from 'capacitor-pay-sumup'
-import type { StripeCheckoutOptions, StripeCheckoutResult, StripePlugin } from 'capacitor-pay-stripe'
+import type { AdyenCheckoutOptions, AdyenCheckoutResult, AdyenPlugin } from '@capacitor-pay/adyen'
+import type { SumUpCheckoutOptions, SumUpCheckoutResult, SumUpPlugin } from '@capacitor-pay/sumup'
+import type { StripeCheckoutOptions, StripeCheckoutResult, StripePlugin } from '@capacitor-pay/stripe'
 import type { CheckoutOptions, CheckoutResult, PaymentProviderName } from './definitions'
 
 /** A provider plugin whose `checkout` accepts/returns the shared `CheckoutOptions`/`CheckoutResult` shapes. */
@@ -42,7 +42,7 @@ export async function createPaymentProvider(provider: 'adyen'): Promise<PaymentP
 export async function createPaymentProvider(provider: PaymentProviderName): Promise<unknown> {
   switch (provider) {
     case 'sumup': {
-      const { SumUp } = await import('capacitor-pay-sumup')
+      const { SumUp } = await import('@capacitor-pay/sumup')
       return wrapCheckout<SumUpPlugin>(
         SumUp,
         (options) => {
@@ -63,7 +63,7 @@ export async function createPaymentProvider(provider: PaymentProviderName): Prom
       )
     }
     case 'stripe': {
-      const { Stripe } = await import('capacitor-pay-stripe')
+      const { Stripe } = await import('@capacitor-pay/stripe')
       return wrapCheckout<StripePlugin>(
         Stripe,
         (options) => {
@@ -83,7 +83,7 @@ export async function createPaymentProvider(provider: PaymentProviderName): Prom
       )
     }
     case 'adyen': {
-      const { Adyen } = await import('capacitor-pay-adyen')
+      const { Adyen } = await import('@capacitor-pay/adyen')
       return wrapCheckout<AdyenPlugin>(
         Adyen,
         (options) => {
