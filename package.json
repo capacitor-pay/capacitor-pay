@@ -38,6 +38,9 @@
     "@capacitor/core": ">=7.0.0"
   },
   "dependencies": {
-    "capacitor-pay-sumup": "file:../capacitor-pay-sumup"
+    "capacitor-pay-adyen": "file:../capacitor-pay-adyen",
+    "capacitor-pay-stripe": "file:../capacitor-pay-stripe",
+    "capacitor-pay-sumup": "file:../capacitor-pay-sumup",
+    "currency-codes-ts": "^3.0.0"
   }
 }
