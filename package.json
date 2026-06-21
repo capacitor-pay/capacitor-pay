@@ -1,6 +1,6 @@
 {
   "name": "@capacitor-pay/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provider-agnostic payments layer for Capacitor apps (Omnipay-style). Install alongside a provider package such as @capacitor-pay/sumup.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -28,6 +28,9 @@
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
+  "publishConfig": {
+  "access": "public"
+},
   "devDependencies": {
     "@capacitor/core": "^8.1.0",
     "rimraf": "^6.0.1",
@@ -38,9 +41,9 @@
     "@capacitor/core": ">=7.0.0"
   },
   "dependencies": {
-    "@capacitor-pay/adyen": "file:../capacitor-pay-adyen",
-    "@capacitor-pay/stripe": "file:../capacitor-pay-stripe",
-    "@capacitor-pay/sumup": "file:../capacitor-pay-sumup",
+    "@capacitor-pay/adyen": "^0.0.1",
+    "@capacitor-pay/stripe": "^0.0.1",
+    "@capacitor-pay/sumup": "^0.0.1",
     "currency-codes-ts": "^3.0.0"
   }
 }
